@@ -239,7 +239,7 @@ func UpdateDataParkiran(MongoEnv, dbname, publickey string, r *http.Request) str
 }
 
 // Get One
-func GetOneEmployee(PublicKey, MongoEnv, dbname, colname string, r *http.Request) string {
+func GetOneParkiran(PublicKey, MongoEnv, dbname, colname string, r *http.Request) string {
 	req := new(ResponseParkiran)
 	resp := new(RequestParkiran)
 	conn := pkb.MongoCreateConnection(MongoEnv, dbname)
